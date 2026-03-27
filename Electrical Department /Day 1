@@ -1,0 +1,161 @@
+# ⚡ Electrical Department
+
+## 📌 Overview
+Materi ini membahas dasar-dasar:
+- Wiring
+- Komponen elektrik
+- Microcontroller
+- Low level programming
+
+---
+
+## 🔌 Common Components in Wiring
+
+### 1. Resistor
+Berfungsi memberikan hambatan agar arus listrik tidak berlebihan  
+(contoh: supaya LED tidak cepat rusak).
+
+### 2. Fuse
+Berfungsi sebagai proteksi rangkaian dengan memutus arus saat terjadi:
+- Overcurrent
+- Short circuit
+
+### 3. Kabel
+Digunakan untuk:
+- Menghantarkan listrik (power)
+- Transmisi sinyal
+
+---
+
+## 🧵 Wiring Methods
+
+### Cutting & Stripping Cables
+- Gunakan alat khusus (wire stripper)
+- Panjang kupasan:
+  - ±0.7 cm (kabel soket)
+  - Lebih panjang untuk splicing
+
+---
+
+## 📡 Peran Kabel
+
+### 1. Power Delivery
+Menyalurkan daya dari baterai/regulator ke komponen
+
+### 2. Signal Communication
+Menghubungkan:
+- Sensor
+- Mikrokontroler
+- Aktuator
+
+### 3. Data Transfer
+Untuk:
+- Programming
+- Debugging
+- Komunikasi data
+
+---
+
+## ⚙️ Engineering Considerations
+
+- **Current Capacity** → Sesuai AWG
+- **Noise / EMI** → Gunakan twisting/shielding
+- **Voltage Drop** → Perhatikan panjang kabel
+
+---
+
+## 🔗 Jenis Kabel
+
+- Dupont → prototyping  
+- JST → sinyal  
+- IDC → sinyal  
+- XT60 → power  
+- Deans/T → power  
+
+---
+
+## 🔧 Splicing Kabel
+
+### Steps:
+1. Strip kedua ujung kabel (~5 cm)
+2. Twist (lilitkan)
+3. Solder + isolasi
+
+### Teknik:
+- Western Union
+- Pork Tail
+- T-Junction
+
+---
+
+## 🤖 Komponen Elektrik dalam Robot
+
+Komponen elektrik = perangkat yang berinteraksi dengan energi listrik untuk:
+- Mengukur
+- Mengendalikan
+- Memanipulasi
+
+---
+
+## 🧠 Sistem Robot
+
+### 1. Sensor (INPUT)
+Mengubah besaran fisik → sinyal listrik  
+Contoh:
+- Push Button
+- Load Cell
+- Encoder
+- IMU
+- Infrared
+
+### 2. Aktuator (OUTPUT)
+Mengubah sinyal listrik → gerakan  
+Contoh:
+- Motor DC / BLDC
+- Servo
+- LED
+- Solenoid
+
+---
+
+## 💻 Microcontroller (MCU)
+
+### Apa itu MCU?
+Chip kecil untuk mengontrol sistem elektronik.
+
+### Fungsi:
+- Komunikasi dengan:
+  - Sensor
+  - Motor
+  - LED
+  - Button
+
+### Contoh:
+- Arduino
+- ESP32
+- STM32
+
+---
+
+## 🔁 Struktur Program
+
+Loop utama:
+1. Baca sensor
+2. Proses data
+3. Output ke aktuator
+
+### Contoh:
+Menyalakan LED saat tombol ditekan
+
+---
+
+## 🚀 Basic Arduino Structure
+
+```cpp
+void setup() {
+  // inisialisasi
+}
+
+void loop() {
+  // program utama (berulang)
+}
